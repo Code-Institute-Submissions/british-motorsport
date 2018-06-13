@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" href="/Assets/CSS/style.css" type="text/css" />
+    <link rel="stylesheet" href="/Assets/CSS/style2.css" type="text/css" />
     <title>British Motorsport</title>
 </head>
 
@@ -14,101 +14,133 @@
     
     <header class="container main-image">
         <div class="main-image-shade">
-            <div class="image-shade-nav">
-                <div class="nav-elements">
-                    <div class="logo"></div>
-                    <div class="navbar">
-                        <a href="#home">Home</a>
-                        <a href="#news">About</a>
-                        <div class="dropdown">
-                            <button class="dropbtn">Championships 
-                                <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="#">BTCC</a>
-                                <a href="#">BRC</a>
-                                <a href="#">BGT</a>
-                                <a href="#">BSBk</a>
-                                <a href="#">BRally</a>
-                                <a href="#">Historics</a>
-                            </div>
-                        </div> 
-                        <a href="#news">Contact</a>
+            <div class="nav-elements">
+                <nav class="navbar">
+                    <div class="navbar-contents">
+                        <div class="navbar-links">
+                            <a href="#home">Home</a>
+                            <div class="dropdown">
+                                <button class="dropbtn">Championships 
+                                  	<i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                  	<a href="#">Touring Cars</a>
+                                  	<a href="#">Rallycross</a>
+                                  	<a href="#">GT</a>
+                                  	<a href="#">Superbike</a>
+                                  	<a href="#">Rally</a>
+                                  	<a href="#">Historic</a>
+                                </div>
+                            </div> 
+                            <a href="#news">About</a>
+                            <a href="#home">Contact</a>
+                        </div>
                     </div>
-                </div>
+                </nav>
             </div>
             <div class="site-intro">
                 <div class="site-intro-text">
                     <h1 class="section-header site-intro-header">British Motorsport</h1>
-                    <p class="section-paragraph site-intro-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet neque fugiat rem ut pariatur incidunt in nihil optio aliquam voluptate Motorsport World.</p>
+                    <hr class="divider-line">
+                    <p class="section-paragraph site-intro-paragraph">In Britain, motorsport is very popular, playing host to multiple world championship events in series including Formula 1, World Endurance Championship and MotoGP.</p>
+                    <p class="section-paragraph site-intro-paragraph">Have a look through this site to see which you may be interested in! Find out latest events and schedules.</p>
                 </div>
             </div>
         </div>
     </header>
     
     <section class="container">
-        <div class="section-layout">
-            <div class="overview">
-                <div class="championships-section">
-                    <div class="championships-intro">
-                        <h1 class="section-header">Championships</h1>
-                        <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam dolor aperiam nesciunt totam dolorum, eaque suscipit, ratione. Sequi, illo.</p>
-                    </div>
-                    <div class="championship-selector">
-                        <div class="championship-image btcc-image">
-                            <div class="championship-description">
-                                <h3 class="championship-heading">British Touring Car Championship</h3>
-                                <p class="championship-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, rem?</p>
-                            </div>
+        <div class="section-container">
+            <div class="section-layout">
+                <div class="overview">
+                    <div class="championships-section">
+                        <div class="championships-intro">
+                            <h1 class="section-header">Championships</h1>
+                            <hr class="divider-line">
+                            <p class="section-paragraph">From two and four wheels, you will find many motorsports series in Britain, catering for a wide range of motorsports fans. CLick through the list below to find a series that may interst you!</p>
                         </div>
-                        <div class="championship-image brc-image">
-                            <div class="championship-description">
-                                <h3 class="championship-heading">British Rallycross</h3>
-                                <p class="championship-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, rem?</p>
+                        <div class="championship-selector">
+                            <div class="championship-image" id="btcc-image">
+                                <div class="overlay">
+                                    <div class="championship-description">
+                                        <h3 class="championship-heading btcc-heading"><a href="#">British Touring Car Championship</a></h3>
+                                        <p class="championship-paragraph btcc-paragraph"><a href="#">Founded in 1958, the British Touring Car Championship is one of Britain's oldest championships, and remains one of its most popular.</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="championship-image bgt-image">
-                            <div class="championship-description">
-                                <h3 class="championship-heading">British GT</h3>
-                                <p class="championship-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, rem?</p>
+                            <div class="championship-image" id="brc-image">
+                                <div class="overlay">
+                                    <div class="championship-description">
+                                        <h3 class="championship-heading brc-heading"><a href="#">British Rallycross Championship</a></h3>
+                                        <p class="championship-paragraph brc-paragraph"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iure inventore ea, obcaecati tenetur sequi vel officia ullam, delectus molestiae!</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="championship-image bsbk-image">
-                            <div class="championship-description">
-                                <h3 class="championship-heading">British Superbike</h3>
-                                <p class="championship-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, rem?</p>
+                            <div class="championship-image" id="bgt-image">
+                                <div class="overlay">
+                                    <div class="championship-description">
+                                        <h3 class="championship-heading bgt-heading"><a href="#">British GT Championship</a></h3>
+                                        <p class="championship-paragraph bgt-paragraph"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam aut ipsum dolores modi eum, consequuntur illo voluptate error id rem.</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="championship-image brallyc-image">
-                            <div class="championship-description">
-                                <h3 class="championship-heading">British Rally Championship</h3>
-                                <p class="championship-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, rem?</p>
+                            <div class="championship-image" id="bsbk-image">
+                                <div class="overlay">
+                                    <div class="championship-description">
+                                        <h3 class="championship-heading bsbk-heading"><a href="#">British Superbike Championship</a></h3>
+                                        <p class="championship-paragraph bsk-paragraph"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem perferendis ducimus accusantium, maxime cupiditate rerum fuga eligendi totam et officia.</a></p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="championship-image historics-image">
-                            <div class="championship-description">
-                                <h3 class="championship-heading">Historics</h3>
-                                <p class="championship-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, rem?</p>
+                            <div class="championship-image" id="brallyc-image">
+                                <div class="overlay">
+                                    <div class="championship-description">
+                                        <h3 class="championship-heading brallyc-heading"><a href="#">British Rally Championship</a></h3>
+                                        <p class="championship-paragraph brallyc-paragraph"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit maxime praesentium molestiae adipisci, voluptates hic, incidunt! Id quia ducimus sapiente?</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="championship-image" id="historics-image">
+                                <div class="overlay">
+                                    <div class="championship-description">
+                                        <h3 class="championship-heading historics-heading"><a href="#">Historic Racing Season</a></h3>
+                                        <p class="championship-paragraph historics-paragraph"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem alias sit cumque, saepe delectus est laboriosam quis cum ad blanditiis!</a></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="events-circuit-section">
-                    <div class="events-circuit-intro">
-                        <h1 class="section-header">Events and Circuits</h1>
-                        <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam dolor aperiam nesciunt totam dolorum, eaque suscipit, ratione. Sequi, illo.</p>
-                    </div>
-                    <div class="events-circuit-selector">
-                        <div class="championship-image events-image">
-                            <div class="events-circuit-intro">
-                                <h3 class="championship-heading">Latest Events</h3>
-                                <p class="championship-paragraph">Click here to view all the circuits of Great Britain and their events</p>
-                            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container">
+        <div class="section-container">
+            <div class="section-layout">
+                <div class="overview">
+                    <div class="events-circuit-section">
+                        <div class="events-circuit-intro">
+                            <h1 class="section-header" id="events-header">Events and Circuits</h1>
+                            <hr class="divider-line">
+                            <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ipsam dolor aperiam nesciunt totam dolorum, eaque suscipit, ratione. Sequi, illo.</p>
                         </div>
-                        <div class="championship-image circuit-image">
-                            <div class="events-circuit-intro">
-                                <h3 class="championship-heading">Circuits</h3>
-                                <p class="championship-paragraph">Click here to view all the circuits of Great Britain and their events</p>
+                        <div class="events-circuit-selector">
+                            <div class="events-image" id="events-image">
+                                <div class="overlay">
+                                    <div class="championship-description">
+                                        <h3 class="championship-heading events-heading"><a href="#">Motorsport Events in 2018</a></h3>
+                                        <p class="championship-paragraph events-paragraph"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem beatae eos libero aliquam tempore quia aliquid incidunt optio veniam alias.</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="events-image" id="circuits-image">
+                                <div class="overlay">
+                                    <div class="championship-description">
+                                        <h3 class="championship-heading circuits-heading"><a href="#">Circuits of the UK</a></h3>
+                                        <p class="championship-paragraph circuits-paragraph"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam iure inventore ea, obcaecati tenetur sequi vel officia ullam, delectus molestiae!</a></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -140,6 +172,7 @@
             </div>
         </div>
     </footer>
+    
 </body>
 
 </html>

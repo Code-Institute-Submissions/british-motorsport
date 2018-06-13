@@ -21,4 +21,3 @@ The Cloud9 IDE team
 
 ## British Motorsport
 
-Hello World
