@@ -145,8 +145,8 @@
 .site-intro {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .site-intro-text {
@@ -182,7 +182,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -211,15 +211,10 @@
 }
 
 .championship-image {
-    margin: 10px;
-    height: 250px;
-    max-width: 380px;
-}
-
-.events-image {
-    height: 250px;
-    max-width: 600px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+    max-width: 100%;
 }
 
 .championship-description {
@@ -261,41 +256,73 @@
 /*Championships Image and effects*/
 
 #btcc-image {
-    background-color: blue;
+    background-image: url("../Images/London-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: blue;*/
     flex: 1 0 auto;
 }
 
 #brc-image {
-    background-color: green;
+    background-image: url("../Images/London-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: green;*/
     flex: 1 0 auto;
 }
 
 #bgt-image {
-    background-color: yellow;
+    background-image: url("../Images/London-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: yellow;*/
     flex: 1 0 auto;
 }
 
 #bsbk-image {
-    background-color: red;
+    background-image: url("../Images/London-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: red;*/
     flex: 1 0 auto;
 }
 
 #brallyc-image {
-    background-color: purple;
+    background-image: url("../Images/Rally.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: purple;*/
     flex: 1 0 auto;
 }
 
 #historics-image {
-    background-color: turquoise;
+    background-image: url("../Images/London-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: turquoise;*/
     flex: 1 0 auto;
 }
 
 #events-image {
-    background-color: greenyellow;
+    background-image: url("../Images/London-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: greenyellow;*/
 }
 
 #circuits-image {
-    background-color: red;
+    background-image: url("../Images/London-pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: red;*/
 }
 
 .overlay {
@@ -340,7 +367,7 @@
 .championship-image:hover .overlay {
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
-    opacity: 0.6;
+    opacity: 0.8;
 } 
 
 .championship-image:hover .championship-heading {
@@ -431,9 +458,22 @@
     -o-transition: 0.35s ease-in-out;
 }
 
-/*
 @media (min-width: 768px) {
+
+    .site-intro {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     
+    .championship-image {
+        margin: 10px;
+        height: 200px;
+        width: 40%;
+    }
+}
+/*    
     .championship-image {
         margin: 10px;
         min-height: 250px;
@@ -481,15 +521,23 @@
     }
     
 }
-
+*/
 @media (min-width: 992px) {
+    
+    .site-intro {
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
     
     .championship-image {
         margin: 10px;
         min-height: 250px;
-        max-width: 500px;
+        width: 28%;
     }
-    
+}
+/*    
     #btcc-image {
         width: 33.33%;
         float: left;
