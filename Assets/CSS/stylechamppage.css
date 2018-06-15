@@ -14,8 +14,65 @@
 
 /*Header Area*/
 
-.main-image {
-    background-image: url("../Images/FrontPageImage.jpg");
+/*Front page images*/
+
+.btcc-page-image {
+    background-image: url("../Images/TouringCar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.brc-page-image {
+    background-image: url("../Images/Rallycross.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.bgt-page-image {
+    background-image: url("../Images/British-GT.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.sbk-page-image {
+    background-image: url("../Images/Superbike.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.brallyc-page-image {
+    background-image: url("../Images/Rally.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.historics-page-image {
+    background-image: url("../Images/1980s-Benetton.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -388,6 +445,53 @@
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
     opacity: 1;
+}
+
+/*Individual championship schedules*/
+
+.schedule-teams-drivers {
+    width: 85%;
+}
+
+.schedule div h4 {
+    font-family: 'Oswald', 'san-serif';
+    font-weight: 400;
+}
+
+.championship-round {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #000;
+    border-left: 1px solid;
+}
+
+.championship-round p {
+    padding: 0;
+    margin: 0;
+}
+
+.championship-round::before {
+    content: attr(dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: 'Teko', 'sans-serif';
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.championship-round::after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
 }
 
 /*Footer areas*/
