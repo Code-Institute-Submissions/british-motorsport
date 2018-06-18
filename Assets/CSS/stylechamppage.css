@@ -16,6 +16,17 @@
 
 /*Front page images*/
 
+.main-image {
+    background-image: url("../Images/FrontPageImage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
 .btcc-page-image {
     background-image: url("../Images/TouringCar.jpg");
     background-size: cover;
@@ -451,6 +462,8 @@
 
 .schedule-teams-drivers {
     width: 85%;
+    display: flex;
+    justify-content: center;
 }
 
 .schedule div h4 {
@@ -470,7 +483,9 @@
     margin: 0;
 }
 
-.championship-round::before {
+
+
+/*.championship-round::before {
     content: attr(dates);
     position: absolute;
     left: 2.5em;
@@ -492,7 +507,7 @@
     left: -6px;
     border-radius: 12px;
     content: '';
-}
+}*/
 
 /*Footer areas*/
 
