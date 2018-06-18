@@ -460,54 +460,196 @@
 
 /*Individual championship schedules*/
 
-.schedule-teams-drivers {
-    width: 85%;
+.schedule-section,
+.teams-driver-section,
+.btcc-video,
+.contact-section {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.schedule div h4 {
-    font-family: 'Oswald', 'san-serif';
-    font-weight: 400;
+.schedule-row,
+.teams-driver-row,
+.video-row,
+.contact-row {
+    width: 85%;
 }
 
 .championship-round {
-    padding: 4em 2em 0em 2em;
-    position: relative;
-    color: #000;
-    border-left: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
-.championship-round p {
-    padding: 0;
-    margin: 0;
+.championship-round:hover {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
 
-
-
-/*.championship-round::before {
-    content: attr(dates);
-    position: absolute;
-    left: 2.5em;
-    top: 3em;
-    display: block;
+.schedule div h5 {
+    width: 40%;
+    height: 34px;
     font-family: 'Teko', 'sans-serif';
-    font-weight: 500;
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    align-items: center;
 }
 
-.championship-round::after {
-    width: 12px;
-    height: 12px;
-    display: block;
-    top: 2.4em;
-    position: absolute;
-    left: -6px;
-    border-radius: 12px;
-    content: '';
-}*/
+.schedule div h4 {
+    width: 65%;
+    height: 34px;
+    font-family: 'Oswald', 'san-serif';
+    font-weight: 300;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    align-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*Teams and driver section*/
+
+.teams-driver-list {
+    width: 100%;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.team:hover {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #333;
+    transition-property: background-color, color;
+    color: #fff;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.team-name-header {
+    width: 40%;
+    height: auto;
+    font-family: 'Oswald', 'san-serif';
+    font-weight: 400;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    align-content: flex-start;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.driver-list {
+    width: 60%;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+    justify-content: flex-start;
+}
+
+.driver-name {
+    font-family: 'Oswald', 'san-serif';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+/*Video section*/
+
+video {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+/*Contacts Page*/
+
+.box-champ-name {
+    align-items: flex-start;
+}
+
+.champ-select-box-option {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding-left: 20px;
+}
+
+.select-box-area {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-checkbox {
+    margin: 0px 20px 10px 0px;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.champ-select-box {
+    padding: 10px 20px 0px 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.champ-select-box-option p {
+    padding: 10px 0px 10px 20px;
+}
+
+.champ-submit-button {
+    color: #fff;
+    background-color: #333;
+    font-family: 'Teko', 'sans-serif';
+    font-size: 30px;
+    font-weight: 200;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    border: 0;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.champ-submit-button:hover {
+    color: #fff;
+    background-color: #000;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.form-text-box {
+    width: 100%;
+    height: 30px;
+    border: solid 0.5px #333;
+    margin: 5px 0px 5px 0px;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 18px;
+    font-weight: 100;
+}
 
 /*Footer areas*/
 
@@ -686,6 +828,9 @@
         width: 100%;
         height: auto;
     }
+    
+    /*Championship pages*/
+    
 }
 
 @media (min-width: 992px) {
