@@ -93,6 +93,17 @@
     -webkit-transition: ease-in-out;
 }
 
+.circuits-page-image {
+    background-image: url("../Images/Racetrack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
 .main-image-shade {
     background-color: rgb(0, 0, 0, 0.6);
 }
@@ -462,8 +473,10 @@
 
 .schedule-section,
 .teams-driver-section,
-.btcc-video,
-.contact-section {
+.video-section,
+.link-button-section,
+.contact-section,
+.circuit-section {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -472,7 +485,9 @@
 .schedule-row,
 .teams-driver-row,
 .video-row,
-.contact-row {
+.link-button,
+.contact-row,
+.circuit-row {
     width: 85%;
 }
 
@@ -552,9 +567,9 @@
 .team-name-header {
     width: 40%;
     height: auto;
-    font-family: 'Oswald', 'san-serif';
+    font-family: 'Teko', 'san-serif';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     padding: 5px 10px 5px 10px;
     align-content: flex-start;
     text-transform: uppercase;
@@ -571,7 +586,7 @@
 .driver-name {
     font-family: 'Oswald', 'san-serif';
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /*Video section*/
@@ -582,18 +597,47 @@ video {
     padding-top: 10px;
 }
 
+/*Visit main page of the championship website*/
+
+.visit-champ-site {
+    font-family: 'Teko', 'sans-serif';
+    font-size: 40px;
+    font-weight: 200;
+    background-color: #333;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.visit-champ-site a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.visit-champ-site:hover {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    background-color: #000;
+    justify-content: center;
+}
+
 /*Contacts Page*/
+
+.center-form {
+    display: flex;
+    justify-content: center;
+}
 
 .box-champ-name {
     align-items: flex-start;
-}
-
-.champ-select-box-option {
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    padding-left: 20px;
 }
 
 .select-box-area {
@@ -619,36 +663,183 @@ video {
     padding: 10px 0px 10px 20px;
 }
 
-.champ-submit-button {
-    color: #fff;
-    background-color: #333;
-    font-family: 'Teko', 'sans-serif';
-    font-size: 30px;
-    font-weight: 200;
-    padding: 10px 0px 10px 0px;
+.text-boxes {
     width: 100%;
-    border: 0;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-}
-
-.champ-submit-button:hover {
-    color: #fff;
-    background-color: #000;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form-text-box {
-    width: 100%;
+    max-width: 500px;
     height: 30px;
-    border: solid 0.5px #333;
-    margin: 5px 0px 5px 0px;
-    font-family: 'Oswald', 'sans-serif';
+    border: solid 0.25px #B0B0B0;
+    margin: 5px 10px 5px 10px;
+    font-family: 'Teko', 'sans-serif';
     font-size: 18px;
     font-weight: 100;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    border: 0;
+    color: #fff;
+    font-family: 'Teko', 'sans-serif';
+    font-size: 40px;
+    font-weight: 200;
+    transition-property: background-color, border-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    transition-property: background-color, border-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    background-color: #000;
+    border-color: #000;
+}
+
+.champ-submit-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Circuits Page*/
+
+.circuit-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.circuit-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aerial-circuit-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+#brands-hatch {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#silverstone {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#donington-park {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#thruxton {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#rockingham {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#oulton-park {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#knockhill {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#snetterton {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#anglesey {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#lydden-hill {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#croft {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#mallory-park {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#castle-combe {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+#cadwell-park {
+    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+}
+
+.circuit-name {
+    font-family: 'Teko', 'sans-serif';
+    font-size: 40px;
+    font-weight: 200;
+    margin: 5px 10px 0px 5px;
+}
+
+.circuit-facts {
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 20px;
+    margin: 5px 10px 10px 5px;
+}
+
+.circuit-length {
+    font-weight: 200;
+}
+
+.circuit-fastest-lap {
+    font-weight: 100;
+}
+
+.circuit-visit-button {
+    background-color: #333;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.circuit-visit-button a {
+    font-family: 'Teko', 'sans-serif';
+    font-size: 40px;
+    font-weight: 200;
+    color: #fff;
+    text-decoration: none;
+}
+
+.circuit-visit-button:hover {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    background-color: #000;
+    justify-content: center;
 }
 
 /*Footer areas*/
@@ -830,6 +1021,29 @@ video {
     }
     
     /*Championship pages*/
+    
+    /*Contacts Page*/
+
+    .champ-submit-button {
+        max-width: 500px;
+    }
+    
+    .form-text-box {
+        min-width: 40%;
+    }
+    
+    /*Circuits pages*/
+    
+    .circuit-overview {
+        width: 47%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .circuit-visit-button {
+        width: 300px;
+    }
     
 }
 
