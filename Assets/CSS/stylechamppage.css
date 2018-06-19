@@ -740,7 +740,7 @@ button[type="submit"]:hover {
 }
 
 #silverstone {
-    background-image: url("../Images/brands-hatch-aerial-image.jpg");
+    background-image: url("../Images/silverstone-aerial.jpg");
 }
 
 #donington-park {
@@ -1034,15 +1034,17 @@ button[type="submit"]:hover {
     
     /*Circuits pages*/
     
+    .circuits {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
     .circuit-overview {
         width: 47%;
         display: flex;
         justify-content: center;
         margin-top: 20px;
-    }
-    
-    .circuit-visit-button {
-        width: 300px;
     }
     
 }

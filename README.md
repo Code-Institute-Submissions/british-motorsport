@@ -1,23 +1,24 @@
+# Front End Milestone Project - British Motorsport
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+## Project Description
+
+This is the Milestone project for the front end part of the course. I have decided to build a website around British Motorsport. 
+
+I have tried to make it a varied project, with a number of pages for different championships. These will follow the same structure, but 
+
+## Installation
+
+## Usage
 
 
-Hi there! Welcome to Cloud9 IDE!
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+## Contributing
 
-Happy coding!
-The Cloud9 IDE team
+## History
 
-# My Front End Milestone Project
+## Credits
 
-## British Motorsport
+## License
+
+
 
