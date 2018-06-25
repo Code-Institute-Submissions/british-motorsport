@@ -293,6 +293,7 @@
     font-family: 'Oswald', 'sans-serif';
     font-weight: 300;
     padding: 15px 5px;
+    text-align: center;
     /*text-align: justify;*/
 }
 
@@ -483,7 +484,7 @@
 }
 
 .schedule-row,
-.teams-driver-row,
+.schedule-teams-row,
 .video-row,
 .link-button,
 .contact-row,
@@ -496,6 +497,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: auto;
     transition-property: background-color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
@@ -547,7 +549,7 @@
     flex-direction: row;
     padding: 10px;
     background-color: #fff;
-    color: #000;
+    color: #75468e;
     transition-property: background-color, color;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
@@ -557,7 +559,7 @@
     display: flex;
     flex-direction: row;
     padding: 10px;
-    background-color: #333;
+    background-color: #75468e;
     transition-property: background-color, color;
     color: #fff;
     transition-duration: 0.3s;
@@ -994,6 +996,10 @@ button[type="submit"]:hover {
         margin-top: 20px;
     }
     
+    .link-button {
+        width: 40%;
+    }
+    
 }
 
 @media (min-width: 992px) {
@@ -1013,5 +1019,19 @@ button[type="submit"]:hover {
     
     .events-circuit-image {
         height: 350px;
+    }
+    
+    .teams-schedule-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .schedule-section {
+        width: 47%;
+    }
+    
+    .teams-driver-section {
+        width: 47%;
     }
 }
