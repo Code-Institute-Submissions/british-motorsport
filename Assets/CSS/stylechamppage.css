@@ -303,6 +303,7 @@
 
 .events-circuit-section {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .championship-image {
@@ -481,6 +482,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .schedule-row,
