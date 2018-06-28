@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Teko:100,200,300,400,500,600,700|Oswald:100,200,300,400,500,600,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+
+.show-menu {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.checkbox-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.show-menu {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.burger-line {
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.navbar-links li {
+    background-color: #000;
+    flex: 1;
+    text-align: center;
+    transition-property: background-color;
+}
+    
+.navbar-links li:hover {
+    background-color: red;
+}
+    
+.navbar-links li a {
+    display: block;
+    font-family: 'helvetica', 'sans-serif';
+    color: #fff;
+    padding: 20px 0;
+    text-decoration: none
+}
+
+/*Hiding the navigation*/
+/*
+.navbar-links {
+    display: none;
+}
+
+/*displaying list item as nlock element for mobile device*/
+/*
+input[type=checkbox]:checked ~ .navbar-links {
+    display: block;
+}
+/*
+@media (min-width: 768px) {
+    
+    input[type=checkbox],
+    .show-menu {
+        display: none;
+    }
+    
+    .navbar-links {
+        display: flex;
+        list-style-type: none;
+    }
+    
+}*/
+
+.container {
+    width: 100%
+}
+
+.main-image {
+    background-image: url("../Images/FrontPageImage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.btcc-page-image {
+    background-image: url("../Images/TouringCar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.main-image-shade {
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.site-intro {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    
+.site-intro-text {
+    width: 85%;
+}
+    
+.site-intro-header {
+    font-size: 30px;
+    color: #fafafa;
+}
+    
+.site-intro-paragraph {
+    color: #fafafa;
+    font-size: 20px;
+}
+    
+.site-header {
+    font-family: 'Teko', 'sans-serif';
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    padding: 15px 5px;
+    text-transform: uppercase;
+}
+    
+.section-header {
+    font-family: 'Teko', 'sans-serif';
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 5px;
+    text-transform: uppercase;
+}
+    
+.section-paragraph {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: 300;
+    padding: 15px 5px;
+    text-align: center;
+    /*text-align: justify;*/
+}
+
+/*Nav elements*/
+
+.nav-elements {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-contents {
+    width: 100%;
+}
+
+.navbar-links {
+    display: block;
+    text-transform: uppercase;
+}
+    
+.navbar-links div button {
+    text-transform: uppercase;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    font-family: "Teko", "sans-serif";
+    list-style-type: none;
+}
+    
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 14px 8px;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #333;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+    
+.dropdown {
+    float: left;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+    
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 14px 8px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    }
+
+/*Mobile Nav items*/
+
+.menu-button {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.show-menu {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: "Teko", "sans-serif";
+    font-size: 16px;
+    padding: 14px 8px;
+}
+
+@media (min-width: 768px) {
+
+    .menu-button {
+        display: none;
+    }
+
+    .nav-elements {
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #000;
+    	-webkit-box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
+    	-moz-box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
+    	box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
+        min-width: 160px;
+        list-style-type: none;
+        z-index: 1; 
+    }
+    
+    .dropdown-content a {
+        float: none;
+        color: #fff;
+        padding: 12px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        text-transform: uppercase;
+    }
+    
+    .dropdown-content a:hover {
+    	transition-property: background-color;
+        background-color: #333;
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+}
+

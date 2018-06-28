@@ -173,6 +173,7 @@
     transition-property: background-color;
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
+    cursor: pointer;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -440,7 +441,7 @@
 .championship-heading a {
     text-decoration: none;
     color: #fff;
-}
+}s-
 
 .championship-paragraph {
     transition-duration: 0.3s;
@@ -505,18 +506,6 @@
     transition-timing-function: ease-in-out;
 }
 
-.championship-round:hover {
-    background-color: #75468e;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition-property: background-color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-}
-
 .schedule div h5 {
     width: 40%;
     height: 34px;
@@ -557,7 +546,9 @@
     transition-timing-function: ease-in-out;
 }
 
-.team:hover {
+/*Hover check*/
+
+.btcc-team:hover {
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -567,6 +558,44 @@
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
+
+.btcc-round:hover {
+    background-color: #75468e;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.brc-team:hover {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: yellow;
+    transition-property: background-color, color;
+    color: #333;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.brc-round:hover {
+    background-color: yellow;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+/*End of hover check*/
 
 .team-name-header {
     width: 40%;
@@ -666,6 +695,7 @@ input {
     margin: 10px 0px 10px 0px;
     border-radius: 4px;
     border-style: solid;
+    border-width: .5pxs;
     width: 90%;
 }
 
@@ -699,7 +729,7 @@ input {
     padding: 5px 5px 5px 5px;
     margin: 0px 30px 0px 30px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     
 }
 
@@ -989,13 +1019,13 @@ button[type="submit"]:hover {
     
     .footer-about {
         margin: 10px;
-        width: 47%;
+        width: 45%;
         height: auto;
     }
     
     .footer-links {
         margin: 10px;
-        width: 47%;
+        width: 45%;
         height: auto;
         display: flex;
         justify-content: center;
