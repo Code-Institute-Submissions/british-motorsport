@@ -829,6 +829,11 @@ button[type="submit"]:hover {
     margin: 3px 10px 3px 10px;
 }
 
+.circuit-image-section,
+.event-image-section {
+    display: block;
+}
+
 .circuit-info,
 .event-info {
     display: flex;
@@ -895,6 +900,9 @@ button[type="submit"]:hover {
     font-weight: 200;
     color: #fff;
     text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 .circuit-visit-button:hover,
@@ -919,7 +927,6 @@ button[type="submit"]:hover {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
 }
 
 .footer-areas {
