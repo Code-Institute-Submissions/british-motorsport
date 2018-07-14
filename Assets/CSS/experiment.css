@@ -2,85 +2,20 @@
 
 * {
     margin: 0;
-    padding: 0;
 }
-
-/*
-
-.show-menu {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    padding-right: 20px;
-}
-
-.checkbox-menu {
-    display: flex;
-    flex-direction: row;
-}
-
-.show-menu {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-}
-
-.burger-line {
-    width: 20px;
-    height: 4px;
-    background-color: #fff;
-}
-
-.navbar-links li {
-    background-color: #000;
-    flex: 1;
-    text-align: center;
-    transition-property: background-color;
-}
-    
-.navbar-links li:hover {
-    background-color: red;
-}
-    
-.navbar-links li a {
-    display: block;
-    font-family: 'helvetica', 'sans-serif';
-    color: #fff;
-    padding: 20px 0;
-    text-decoration: none
-}
-
-/*Hiding the navigation*/
-/*
-.navbar-links {
-    display: none;
-}
-
-/*displaying list item as nlock element for mobile device*/
-/*
-input[type=checkbox]:checked ~ .navbar-links {
-    display: block;
-}
-/*
-@media (min-width: 768px) {
-    
-    input[type=checkbox],
-    .show-menu {
-        display: none;
-    }
-    
-    .navbar-links {
-        display: flex;
-        list-style-type: none;
-    }
-    
-}*/
 
 .container {
-    width: 100%
+    width: 100%;
 }
+
+.overview {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*Header Area*/
+
+/*Front page images*/
 
 .main-image {
     background-image: url("../Images/FrontPageImage.jpg");
@@ -104,94 +39,139 @@ input[type=checkbox]:checked ~ .navbar-links {
     -webkit-transition: ease-in-out;
 }
 
+.brc-page-image {
+    background-image: url("../Images/Rallycross.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.bgt-page-image {
+    background-image: url("../Images/British-GT.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.sbk-page-image {
+    background-image: url("../Images/Superbike.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.brallyc-page-image {
+    background-image: url("../Images/Rally.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.historics-page-image {
+    background-image: url("../Images/1980s-Benetton.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.circuits-page-image {
+    background-image: url("../Images/Racetrack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
+.events-page-image {
+    background-image: url("../Images/Events.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    -moz-transition: ease-in-out;
+    -webkit-transition: ease-in-out;
+}
+
 .main-image-shade {
     background-color: rgb(0, 0, 0, 0.6);
 }
 
-.site-intro {
+/*Nav elements along the top of the site basic formatting*/
+
+.menu-bar {
     display: flex;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-    
-.site-intro-text {
-    width: 85%;
-}
-    
-.site-intro-header {
-    font-size: 30px;
-    color: #fafafa;
-}
-    
-.site-intro-paragraph {
-    color: #fafafa;
-    font-size: 20px;
-}
-    
-.site-header {
-    font-family: 'Teko', 'sans-serif';
-    font-weight: 300;
-    font-size: 50px;
-    text-align: center;
-    padding: 15px 5px;
-    text-transform: uppercase;
-}
-    
-.section-header {
-    font-family: 'Teko', 'sans-serif';
-    font-weight: 300;
-    font-size: 40px;
-    text-align: center;
-    padding: 15px 5px;
-    text-transform: uppercase;
-}
-    
-.section-paragraph {
-    font-family: 'Oswald', 'sans-serif';
-    font-weight: 300;
-    padding: 15px 5px;
-    text-align: center;
-    /*text-align: justify;*/
 }
 
-/*Nav elements*/
+.menu-button {
+    width: 100%;
+    align-items: center;
+    padding: 14px 8px;
+    text-align: right;
+}
+
+.show-menu {
+    font-family: "Teko", "san-serif";
+    padding: 14px 8px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+input {
+    display: none;
+}
+
+/*.menu-checkbox {
+    display: none;
+}*/
 
 .nav-elements {
-    display: flex;
-    justify-content: center;
-}
-
-.nav
-
-.navbar-contents {
+    position: relative;
     width: 100%;
-}
-
-.navbar-links {
-    display: block;
-    text-transform: uppercase;
-}
-    
-.navbar-links div button {
-    text-transform: uppercase;
+    z-index: 1;
 }
 
 .navbar {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin: 0;
-    width: 100%;
+	margin: 0;
+	width: 100%;
     overflow: hidden;
     background-color: #000;
     font-family: "Teko", "sans-serif";
     list-style-type: none;
 }
-    
+
 .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     text-align: center;
     padding: 14px 8px;
@@ -201,21 +181,53 @@ input[type=checkbox]:checked ~ .navbar-links {
     transition-duration: 0.2s;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #333;
-    transition-property: background-color;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
+.navbar-contents {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-    
+
+.navbar-contents div div button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    justify-content: center;
+}
+
+.navbar-links {
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+
+#top-return {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.navbar-to-top {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Nav drop down areas*/
+
 .dropdown {
     float: left;
     overflow: hidden;
     text-transform: uppercase;
+    text-align: center;
 }
-    
+
+.dropdown button {
+    justify-content: center;
+}
+
 .dropdown .dropbtn {
-    font-size: 16px;    
+    font-size: 20px;    
     border: none;
     outline: none;
     color: #fff;
@@ -227,75 +239,1079 @@ input[type=checkbox]:checked ~ .navbar-links {
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
     cursor: pointer;
-    }
+}
 
-/*Mobile Nav items*/
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #333;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
 
-.menu-button {
+.dropdown-content {
+    display: none;
+    position: relative;
     background-color: #000;
+	-webkit-box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
+	-moz-box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
+	box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
+    width: 100%;
+    list-style-type: none;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #fff;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    text-transform: uppercase;
+    
+}
+
+.dropdown-content a:hover {
+	transition-property: background-color;
+    background-color: #333;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Header section of writing*/
+
+.site-intro {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.site-intro-text {
+    width: 85%;
+}
+
+.site-intro-header {
+    font-size: 30px;
+    color: #fafafa;
+}
+
+.site-intro-paragraph {
+    color: #fafafa;
+    font-size: 20px;
+}
+
+/*Championship Sections*/
+
+.section-container {
+    display: flex;
+    justify-content: center;
+}
+
+.section-layout {
+    width: 85%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.championship-selector {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.events-circuit-selector {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.site-header {
+    font-family: 'Teko', 'sans-serif';
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+    padding: 15px 5px;
+    text-transform: uppercase;
+}
+
+.section-header {
+    font-family: 'Teko', 'sans-serif';
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px 5px;
+    text-transform: uppercase;
+}
+
+.section-paragraph {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: 300;
+    padding: 15px 5px;
+    text-align: center;
+    /*text-align: justify;*/
+}
+
+.championships-section {
+    width: 100%;
+}
+
+.circuit-section,
+.event-section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.championship-image {
+    margin-top: 10px;
+    height: 200px;
+    max-width: 100%;
+}
+
+.championship-description {
+    width: 85%;
+    color: #fff;
+}
+
+.championships-intro {
+    width: 100%;
+}
+
+.events-circuit-intro {
+    width: 100%;
+}
+
+.championship-heading {
+    font-family: 'Teko', 'sans-serif';
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    text-transform: uppercase;
+}
+
+.championship-paragraph {
+    font-family: 'Oswald', 'san-serif';
+    font-weight: 300;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.divider-line {
+    height: 1.5px;
+    background-color: #676767;
+    border: none;
+    margin-bottom: 15px;
+}
+
+/*Championships Image and effects*/
+
+#btcc-image {
+    background-image: url("../Images/TouringCar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+#brc-image {
+    background-image: url("../Images/Rallycross.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+#bgt-image {
+    background-image: url("../Images/British-GT.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+#bsbk-image {
+    background-image: url("../Images/Superbike.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+#brallyc-image {
+    background-image: url("../Images/Rally.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+#historics-image {
+    background-image: url("../Images/1980s-Benetton.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+#events-image {
+    background-image: url("../Images/Events.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+#circuits-image {
+    background-image: url("../Images/Racetrack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.championship-heading {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+.championship-heading a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.championship-paragraph {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    opacity: 0;
+}
+
+.championship-paragraph a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.championship-image:hover .overlay {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    opacity: 0.7;
+} 
+
+.championship-image:hover .championship-heading {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+}
+
+.championship-image:hover .championship-paragraph {
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    opacity: 1;
+}
+
+.overview {
+    margin-bottom: 20px;
+}
+
+/*Individual championship schedules*/
+
+.schedule-section,
+.teams-driver-section,
+.video-section,
+.link-button-section,
+.contact-section,
+.circuit-section,
+.event-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.schedule-row,
+.schedule-teams-row,
+.video-row,
+.link-button,
+.contact-row,
+.circuit-row {
+    width: 85%;
+}
+
+.championship-round {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.schedule div h5 {
+    width: 40%;
+    height: 34px;
+    font-family: 'Teko', 'sans-serif';
+    font-weight: 300;
+    font-size: 14px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.schedule div h4 {
+    width: 65%;
+    height: 34px;
+    font-family: 'Oswald', 'san-serif';
+    font-weight: 300;
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    align-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*Teams and driver section*/
+
+.teams-driver-list {
+    width: 100%;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+/*Hover check*/
+
+/*BTCC*/
+
+.btcc-team:hover {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #75468e;
+    transition-property: background-color, color;
+    color: #fff;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.btcc-round:hover {
+    background-color: #75468e;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+/*BRC*/
+
+.brc-team:hover {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: yellow;
+    transition-property: background-color, color;
+    color: #333;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.brc-round:hover {
+    background-color: yellow;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+/*SBK*/
+
+.sbk-team:hover {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #b21e27;
+    transition-property: background-color, color;
+    color: #fff;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.sbk-round:hover {
+    background-color: #b21e27;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+/*British GT*/
+
+.bgt-team:hover {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #606466;
+    transition-property: background-color, color;
+    color: #fff;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.bgt-round:hover {
+    background-color: #606466;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+/*British GT*/
+
+.brallyc-team:hover {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #000;
+    transition-property: background-color, color;
+    color: #fff;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.brallyc-round:hover {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+/*End of hover check*/
+
+.team-name-header {
+    width: 40%;
+    height: auto;
+    font-family: 'Teko', 'san-serif';
+    font-weight: 400;
+    font-size: 25px;
+    padding: 5px 10px 5px 10px;
+    align-content: flex-start;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.driver-list {
+    width: 60%;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+    justify-content: flex-start;
+}
+
+.driver-name {
+    font-family: 'Oswald', 'san-serif';
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/*Video section*/
+
+video {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+.video-player {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    -webkit-max-logical-height: 210px;
+}
+
+/*Visit main page of the championship website*/
+
+.visit-champ-site {
+    font-family: 'Teko', 'sans-serif';
+    font-size: 40px;
+    font-weight: 200;
+    background-color: #333;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    display: flex;
+}
+
+.visit-champ-site a {
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.visit-champ-site:hover {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    background-color: #000;
+    justify-content: center;
+}
+
+/*Contacts Page*/
+
+.form-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-text-box-area {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-box {
+    width: 100%;
+}
+
+input {
+    font-family: 'Oswald', 'san-serif';
+    font-size: 14px;
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: .5px;
+    width: 90%;
+}
+
+.checkbox-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.form-checkbox .checkbox-area{
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.champ-select-box {
+    padding: 10px 0px 10px 0px;
+    height: 15px;
+    width: 15px;
+    margin: 0px 20px 0px 0px;
+}
+
+.champ-select-box-option {
+    width: 150px;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 30px 0px 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.contact-submit-button-area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.champ-submit-button {
+    width: 100%;
+}
+
+button[type="submit"] {
+    margin: 15px 0px 0px 0px;
+    max-width: 500px;
+    height: 50px;
+    background-color: #333;
+    border: 0;
+    color: #fff;
+    font-family: 'Teko', 'sans-serif';
+    font-size: 40px;
+    font-weight: 200;
+    transition-property: background-color, border-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    transition-property: background-color, border-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    background-color: #000;
+    border-color: #000;
+}
+
+/*Circuits and events Page*/
+
+.circuits,
+.events {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.circuit-overview,
+.events-overview {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3px 10px 3px 10px;
+}
+
+.circuit-image-section,
+.event-image-section {
+    display: block;
+}
+
+.circuit-info,
+.event-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-name,
+.circuit-name {
+    font-family: 'Teko', 'sans-serif';
+    font-size: 40px;
+    font-weight: 200;
+    margin: 0px 10px 0px 5px;
+}
+
+.event-facts,
+.circuit-facts {
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 20px;
+    margin: 0px 10px 20px 5px;
+}
+
+.circuit-length,
+.event-info {
+    font-weight: 200;
+}
+
+.circuit-text,
+.event-text {
+    padding-bottom: 5px;
+    background-color: #ccc6c5;
+}
+
+.circuit-text {
+    height: 130px;
+}
+
+.event-text {
+    height: 180px;
+}
+
+.circuit-fastest-lap {
+    font-weight: 100;
+}
+
+.circuit-visit-button,
+.event-visit-button {
+    background-color: #333;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-width: 350px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    display: flex;
+}
+
+.circuit-visit-button a,
+.event-visit-button a {
+    font-family: 'Teko', 'sans-serif';
+    font-size: 40px;
+    font-weight: 200;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.circuit-visit-button:hover,
+.event-visit-button:hover {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    background-color: #000;
+    justify-content: center;
+}
+
+.cicuit-divider,
+.event-divider {
+    max-width: 350px;
+}
+
+/*Footer areas*/
+
+.footer-all {
+    background-color: #000;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.show-menu {
-    background-color: #000;
+.footer-areas {
     color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-about {
+    width: 100%;
+    margin: 10px 10px 20px 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-btcc-twitter-feed {
+    width: 100%;
+    margin: 10px 5px 20px 5px;
+}
+
+.external-sites {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.external-sites a {
+    text-decoration: none;
     font-family: "Teko", "sans-serif";
     font-size: 16px;
-    padding: 14px 8px;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.external-sites a:hover {
+    transition-property: background-color;
+    background-color: #333;
+    transition: 0.3s ease-in-out;
+}
+
+.social-links-area {
+    width: 100%;
+    margin: 10px 10px 25px 10px;
+    justify-content: center;
+}
+
+.footer-about-header {
+    padding: 0;
+}
+
+.footer-about-paragraph {
+    padding: 0;
+}
+
+.footer-areas-header {
+    font-family: 'Teko', 'sans-serif';
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-areas-paragraph {
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 18px;
+    text-align: justify;
+    font-weight: 200;
+}
+
+.social-links-area {
+    height: auto;
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+}
+
+.social-links {
+    margin: 5px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-links li a i {
+    width: 25px;
+    height: 25px;
+    padding: 5px 5px;
+    margin: 0px 8px 0px 8px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 7px;
+    background-color: #000;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    -moz-transition: 0.35s ease-in-out;
+    -webkit-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    transition-property: background-color;
+    transition: 0.35s ease-in-out;
+    background-color: #333;
+    -moz-transition: 0.35s ease-in-out;
+    -webkit-transition: 0.35s ease-in-out;
+    -o-transition: 0.35s ease-in-out;
+}
+
+@media (min-width: 667px) {
+    
+    .menu-button {
+        width: 100%;
+        align-items: center;
+        padding: 14px 8px;
+        text-align: right;
+    }
+    
+    .video-player {
+        -webkit-max-logical-height: 330px;
+    }
 }
 
 @media (min-width: 768px) {
-
-    .menu-button {
+    
+    .menu-bar {
         display: none;
     }
-
+    
     .nav-elements {
-        justify-content: center;
+        display: block;
         position: relative;
         width: 100%;
         z-index: 1;
     }
     
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #000;
-    	-webkit-box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
-    	-moz-box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
-    	box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
-        min-width: 160px;
-        list-style-type: none;
-        z-index: 1; 
-    }
-    
-    .dropdown-content a {
-        float: none;
-        color: #fff;
-        padding: 12px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in-out;
+    .navbar-links {
+        width: 100%;
         text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .site-intro {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     
-    .dropdown-content a:hover {
-    	transition-property: background-color;
-        background-color: #333;
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in-out;
+    .championship-image {
+        margin: 10px;
+        height: 200px;
+        width: 40%;
     }
     
-    .dropdown:hover .dropdown-content {
-        display: block;
+    .footer-areas {
+        margin: 10px;
+        justify-content: center;
     }
     
+    .footer-about {
+        margin: 10px;
+        width: 45%;
+        height: auto;
+    }
+    
+    .footer-links {
+        margin: 10px;
+        width: 45%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-btcc-twitter-feed {
+        margin: 10px;
+        width: 100%;
+        height: auto;
+    }
+    
+    .social-links-area {
+        width: 100%;
+        height: auto;
+    }
+    
+    /*Championship pages*/
+    
+    /*Contacts Page*/
+    
+    input {
+        width: 500px;
+    }
+    
+    /*Circuits pages*/
+    
+    .circuit-overview,
+    .event-overview {
+        width: 47%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .link-button {
+        width: 40%;
+    }
+    
+    video {
+        width: 700px;
+        height: auto;
+        padding-top: 10px;
+    }
+    
+    .video-player {
+        -webkit-max-logical-height: 410px;
+    }
+
 }
 
+@media (min-width: 992px) {
+    
+    .site-intro {
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    
+    .championship-image {
+        margin: 10px;
+        min-height: 250px;
+        width: 28%;
+    }
+    
+    .events-circuit-image {
+        height: 350px;
+    }
+    
+    .teams-schedule-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .schedule-section {
+        width: 47%;
+    }
+    
+    .teams-driver-section {
+        width: 47%;
+    }
+    
+    video {
+        width: 800px;
+        height: auto;
+        padding-top: 10px;
+    }
+    
+    .video-player {
+        -webkit-max-logical-height: 460px;
+    }
+}
