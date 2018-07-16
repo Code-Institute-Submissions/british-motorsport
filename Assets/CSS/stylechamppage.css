@@ -24,8 +24,6 @@
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .btcc-page-image {
@@ -35,8 +33,6 @@
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .brc-page-image {
@@ -46,8 +42,6 @@
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .bgt-page-image {
@@ -57,8 +51,6 @@
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .sbk-page-image {
@@ -68,8 +60,6 @@
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .brallyc-page-image {
@@ -79,8 +69,6 @@
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .historics-page-image {
@@ -90,8 +78,6 @@
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .circuits-page-image {
@@ -101,8 +87,6 @@
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .events-page-image {
@@ -112,8 +96,6 @@
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .main-image-shade {
@@ -844,7 +826,7 @@ button[type="submit"]:hover {
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
     background-color: #000;
-    border-color: #000;
+    border: none;
 }
 
 /*Circuits and events Page*/
@@ -1073,18 +1055,12 @@ button[type="submit"]:hover {
     justify-content: center;
     display: flex;
     align-items: center;
-    -moz-transition: 0.35s ease-in-out;
-    -webkit-transition: 0.35s ease-in-out;
-    -o-transition: 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
     transition-property: background-color;
     transition: 0.35s ease-in-out;
     background-color: #333;
-    -moz-transition: 0.35s ease-in-out;
-    -webkit-transition: 0.35s ease-in-out;
-    -o-transition: 0.35s ease-in-out;
 }
 
 @media (min-width: 667px) {
