@@ -182,37 +182,16 @@
 
 /*Nav drop down areas*/
 
-.toggle {
+label {
     color: #fff;
-    text-align: right;
+    width: 40px;
+    margin-left: 30px;
     margin-right: 30px;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-    text-transform: uppercase;
-    text-align: center;
+    align-self: flex-end;
 }
 
 input {
     display: none;
-}
-
-.dropdown .dropbtn {
-    font-size: 18px;    
-    border: none;
-    outline: none;
-    color: #fff;
-    width: 100%;
-    padding: 14px 8px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    transition-property: background-color;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
-    cursor: pointer;
 }
 
 .nav-display {
@@ -223,46 +202,11 @@ input {
     display: inherit;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover {
     background-color: #333;
     transition-property: background-color;
     transition-timing-function: ease-in-out;
     transition-duration: 0.2s;
-}
-
-.dropdown-content {
-    display: none;
-    position: relative;
-    background-color: #000;
-	-webkit-box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
-	-moz-box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
-	box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
-    min-width: 160px;
-    list-style-type: none;
-    z-index: 1; 
-}
-
-.dropdown-content a {
-    color: #fff;
-    padding: 12px;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    text-transform: uppercase;
-}
-
-.dropdown-content a:hover {
-	transition-property: background-color;
-    background-color: #333;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 /*Header section of writing*/
@@ -852,6 +796,7 @@ input {
 }
 
 .champ-select-box {
+    display: block;
     padding: 10px 0px 10px 0px;
     height: 15px;
     width: 15px;
@@ -1151,6 +1096,8 @@ button[type="submit"]:hover {
 
 @media (min-width: 768px) {
     
+    /*Navbar section for larger screens*/
+    
     .toggle {
         display: none;
     }
@@ -1162,13 +1109,12 @@ button[type="submit"]:hover {
     .navbar-links {
         display: flex;
         justify-content: center;
+        align-items: center;
         flex-direction: row;
         text-transform: uppercase;
     }
 
-.navbar-links div button {
-    text-transform: uppercase;
-}
+    /*End of navbar section*/
 
     .site-intro {
         display: flex;

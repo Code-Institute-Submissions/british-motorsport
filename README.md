@@ -6,7 +6,7 @@ This is the Milestone project for the front end development part of the course.
 
 ### General Information
 
-I have decided to build a website around British Motorsport, and it contains 11 pages. A lot of these are similar but show different championships in the same style. The circuits and events page also have a similar feel. Some of the pages include lots of photos which add to the visual effect of the site. Two to the championship pages also contain video.
+I have decided to build a website around British Motorsport, and it contains 10 pages. A lot of these are similar but show different championships in the same style. The circuits and events page also have a similar feel. Some of the pages include lots of photos which add to the visual effect of the site. Two to the championship pages also contain video.
 
 I have made it a varied project, with a number of pages for different championships. These will follow the same structure, and contain different relevant information.
 
