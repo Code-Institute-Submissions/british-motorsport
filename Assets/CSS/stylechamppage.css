@@ -851,6 +851,7 @@ button[type="submit"]:hover {
 .circuit-image-section,
 .event-image-section {
     display: block;
+    width: 100%;
 }
 
 .circuit-info,
