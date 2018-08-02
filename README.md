@@ -20,7 +20,11 @@ This site has been created using mobile first design.
 
 For the responsive elements of the site I have used Flexbox, and created media queries to determine how many elements are in each row. This can be seen on all pages. This can also be seen in the footer area.
 
-For mobile and tablet view sizes I have created a menu item at the top for the navigation bar.
+For mobile and tablet view sizes I have created a menu burger icon at the top for the navigation bar.
+
+### After work completed
+
+I checked the code for the html and css on online validators, and all the pages were updated according to the results. The CSS was then minified to speed up the load time of the pages.
 
 
 

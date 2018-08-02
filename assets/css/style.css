@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+body {
+    font-family: "Oswald", "san-serif";
+}
+
 .container {
     width: 100%;
 }
@@ -18,102 +22,84 @@
 /*Front page images*/
 
 .main-image {
-    background-image: url("../Images/FrontPageImage.jpg");
+    background-image: url("../images/front-page-image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .btcc-page-image {
-    background-image: url("../Images/TouringCar.jpg");
+    background-image: url("../images/touring-car.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .brc-page-image {
-    background-image: url("../Images/Rallycross.jpg");
+    background-image: url("../images/rallycross.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .bgt-page-image {
-    background-image: url("../Images/British-GT.jpg");
+    background-image: url("../images/british-gt.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .sbk-page-image {
-    background-image: url("../Images/Superbike.jpg");
+    background-image: url("../images/superbike.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .brallyc-page-image {
-    background-image: url("../Images/Rally.jpg");
+    background-image: url("../images/rally.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .historics-page-image {
-    background-image: url("../Images/1980s-Benetton.jpg");
+    background-image: url("../images/1980s-benetton.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .circuits-page-image {
-    background-image: url("../Images/Racetrack.jpg");
+    background-image: url("../images/racetrack.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .events-page-image {
-    background-image: url("../Images/Events.jpg");
+    background-image: url("../images/events.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-    -moz-transition: ease-in-out;
-    -webkit-transition: ease-in-out;
 }
 
 .main-image-shade {
@@ -122,132 +108,91 @@
 
 /*Nav elements along the top of the site basic formatting*/
 
-.nav {
-    font-family: "Teko", "san-serif";
+.nav-elements {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+	margin: 0;
+	width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    font-family: "Teko", "sans-serif";
+    list-style-type: none;
+    font-size: 35px;
+}
+
+.navbar a {
     font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 400; 
-    text-align: right;
-    background-color: #000;
     color: #fff;
-    line-height: 50px;
-}
-
-.menu,
-.dropdown {
     text-align: center;
-    width: 100%;
-    display: none;
-}
-
-#toggle:checked + .menu {
-    display: block;
-}
-
-.menu a,
-.dropdown {
-    display: block;
+    padding: 14px 8px;
     text-decoration: none;
-    padding: 0;
-    color: #fff;
-    margin: 0px;
-    width: 100%;
-    background-color: #000;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-}
-
-.menu a:hover,
-.dropdown:hover {
     transition-property: background-color;
-    background-color: #333;
-    transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
 }
 
-.menu-icon {
-    margin: 0 30px 0 0;
-    font-size: 30px;
-    line-height: 50px;
-    display: block;
-    cursor: pointer;
+.navbar-contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.toggle-button {
-    width: 85%;
+.navbar-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
 }
 
-#toggle {
-    display: none;
+.navbar-links div button {
+    text-transform: uppercase;
+}
+
+#top-return {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.navbar-to-top {
+    padding: 0px;
+    margin: 0px;
 }
 
 /*Nav drop down areas*/
 
-.dropdown {
-    float: left;
-    overflow: hidden;
-    text-transform: uppercase;
-}
-
-.dropdown .dropbtn {
-    font-size: 18px;    
-    border: none;
-    outline: none;
+.toggle {
     color: #fff;
-    padding: 14px 8px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    transition-property: background-color;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
-    cursor: pointer;
+    width: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    align-self: flex-end;
 }
 
-.dropdown button {
-    text-transform: uppercase;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #333;
-    transition-property: background-color;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
-}
-
-.dropdown-content {
+.nav-checkbox-input {
     display: none;
-    position: relative;
-    background-color: #000;
-	-webkit-box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
-	-moz-box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
-	box-shadow: 7px 4px 12px 2px rgba(103,103,103,0.37);
-    min-width: 160px;
-    list-style-type: none;
-    z-index: 1; 
 }
 
-.dropdown-content a {
-    float: none;
-    color: #fff;
-    padding: 12px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    text-transform: uppercase;
+.nav-display {
+    display: none;
 }
 
-.dropdown-content a:hover {
-	transition-property: background-color;
+#toggle:checked + .nav-display {
+    display: inherit;
+}
+
+.navbar a:hover {
     background-color: #333;
-    transition-duration: 0.2s;
+    transition-property: background-color;
     transition-timing-function: ease-in-out;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+    transition-duration: 0.2s;
 }
 
 /*Header section of writing*/
@@ -323,10 +268,9 @@
 }
 
 .section-paragraph {
-    font-family: 'Oswald', 'sans-serif';
     font-weight: 300;
-    padding: 15px 5px;
-    text-align: center;
+    padding: 10px 0;
+    text-align: left;
     /*text-align: justify;*/
 }
 
@@ -369,7 +313,6 @@
 }
 
 .championship-paragraph {
-    font-family: 'Oswald', 'san-serif';
     font-weight: 300;
     text-align: center;
     padding: 5px 0px 5px 0px;
@@ -385,7 +328,7 @@
 /*Championships Image and effects*/
 
 #btcc-image {
-    background-image: url("../Images/TouringCar.jpg");
+    background-image: url("../images/touring-car.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -393,7 +336,7 @@
 }
 
 #brc-image {
-    background-image: url("../Images/Rallycross.jpg");
+    background-image: url("../images/rallycross.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -401,7 +344,7 @@
 }
 
 #bgt-image {
-    background-image: url("../Images/British-GT.jpg");
+    background-image: url("../images/british-gt.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -409,7 +352,7 @@
 }
 
 #bsbk-image {
-    background-image: url("../Images/Superbike.jpg");
+    background-image: url("../images/superbike.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -417,7 +360,7 @@
 }
 
 #brallyc-image {
-    background-image: url("../Images/Rally.jpg");
+    background-image: url("../images/rally.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -425,7 +368,7 @@
 }
 
 #historics-image {
-    background-image: url("../Images/1980s-Benetton.jpg");
+    background-image: url("../images/1980s-benetton.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -433,7 +376,7 @@
 }
 
 #events-image {
-    background-image: url("../Images/Events.jpg");
+    background-image: url("../images/events.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -441,7 +384,7 @@
 }
 
 #circuits-image {
-    background-image: url("../Images/Racetrack.jpg");
+    background-image: url("../images/racetrack.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -559,7 +502,6 @@
 .schedule div h4 {
     width: 65%;
     height: 34px;
-    font-family: 'Oswald', 'san-serif';
     font-weight: 300;
     font-size: 18px;
     padding: 5px 10px 5px 10px;
@@ -734,7 +676,6 @@
 }
 
 .driver-name {
-    font-family: 'Oswald', 'san-serif';
     font-weight: 300;
     font-size: 18px;
 }
@@ -807,8 +748,7 @@ video {
     width: 100%;
 }
 
-input {
-    font-family: 'Oswald', 'san-serif';
+.input-box-text {
     font-size: 14px;
     height: 30px;
     margin: 10px 0px 10px 0px;
@@ -822,25 +762,25 @@ input {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .form-checkbox .checkbox-area{
-    font-family: 'Oswald', 'sans-serif';
     font-size: 16px;
     font-weight: 300;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    width: 250px;
 }
 
 .champ-select-box {
+    display: block;
     padding: 10px 0px 10px 0px;
     height: 15px;
     width: 15px;
-    margin: 0px 20px 0px 0px;
+    margin: 0px 50px 0px 0px;
 }
 
 .champ-select-box-option {
@@ -848,7 +788,8 @@ input {
     padding: 5px 5px 5px 5px;
     margin: 0px 30px 0px 30px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     
 }
 
@@ -884,7 +825,7 @@ button[type="submit"]:hover {
     transition-timing-function: ease-in-out;
     transition-duration: 0.3s;
     background-color: #000;
-    border-color: #000;
+    border: none;
 }
 
 /*Circuits and events Page*/
@@ -909,6 +850,7 @@ button[type="submit"]:hover {
 .circuit-image-section,
 .event-image-section {
     display: block;
+    width: 100%;
 }
 
 .circuit-info,
@@ -928,7 +870,6 @@ button[type="submit"]:hover {
 
 .event-facts,
 .circuit-facts {
-    font-family: 'Oswald', 'sans-serif';
     font-size: 20px;
     margin: 0px 10px 20px 5px;
 }
@@ -1025,35 +966,7 @@ button[type="submit"]:hover {
     flex-direction: column;
 }
 
-/**/
-
-.return-button {
-    display: flex;
-    justify-content: center;
-	margin: 0;
-	width: 100%;
-    overflow: hidden;
-    background-color: #000;
-    font-family: "Teko", "sans-serif";
-    list-style-type: none;
-}
-
-.return-button a {
-    float: left;
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-    padding: 30px 8px;
-    text-decoration: none;
-    transition-property: background-color;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
-    text-transform: uppercase;
-}
-
-/**/
-
-.around-web {
+.footer-btcc-twitter-feed {
     width: 100%;
     margin: 10px 5px 20px 5px;
 }
@@ -1098,14 +1011,13 @@ button[type="submit"]:hover {
 .footer-areas-header {
     font-family: 'Teko', 'sans-serif';
     font-size: 30px;
-    text-align: center;
+    text-align: left;
     font-weight: 300;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .footer-areas-paragraph {
-    font-family: 'Oswald', 'sans-serif';
     font-size: 18px;
     text-align: justify;
     font-weight: 200;
@@ -1126,6 +1038,10 @@ button[type="submit"]:hover {
     padding: 0;
 }
 
+.social-links li a {
+    text-decoration: none;
+}
+
 .social-links li a i {
     width: 25px;
     height: 25px;
@@ -1141,25 +1057,15 @@ button[type="submit"]:hover {
     justify-content: center;
     display: flex;
     align-items: center;
-    -moz-transition: 0.35s ease-in-out;
-    -webkit-transition: 0.35s ease-in-out;
-    -o-transition: 0.35s ease-in-out;
 }
 
 .social-links li a i:hover {
     transition-property: background-color;
     transition: 0.35s ease-in-out;
     background-color: #333;
-    -moz-transition: 0.35s ease-in-out;
-    -webkit-transition: 0.35s ease-in-out;
-    -o-transition: 0.35s ease-in-out;
 }
 
 @media (min-width: 667px) {
-    
-    .menu-icon {
-        margin: 0 50px 0 0;
-    }
     
     .video-player {
         -webkit-max-logical-height: 330px;
@@ -1167,20 +1073,26 @@ button[type="submit"]:hover {
 }
 
 @media (min-width: 768px) {
-
-    .menu-icon {
+    
+    /*Navbar section for larger screens*/
+    
+    .toggle {
         display: none;
     }
     
-    .menu {
+    .nav-display {
         display: block;
     }
     
-    .menu a,
-    .dropbtn {
-        display: inline;
-        padding: 0px 10px 0px 10px;
+    .navbar-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        text-transform: uppercase;
     }
+
+    /*End of navbar section*/
 
     .site-intro {
         display: flex;
@@ -1229,7 +1141,7 @@ button[type="submit"]:hover {
     
     /*Contacts Page*/
     
-    input {
+    .input-box {
         width: 500px;
     }
     
