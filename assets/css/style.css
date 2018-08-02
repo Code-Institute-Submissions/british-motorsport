@@ -130,7 +130,30 @@ body {
     font-size: 18px;
     color: #fff;
     text-align: center;
-    padding: 14px 8px;
+    padding: 14px 8px 14px 8px;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+
+.footer-nav {
+    margin: 0;
+	width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    font-family: "Teko", "sans-serif";
+    list-style-type: none;
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-nav a {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding: 14px 0 14px 0;
     text-decoration: none;
     transition-property: background-color;
     transition-timing-function: ease-in-out;
@@ -214,6 +237,7 @@ body {
 }
 
 .site-intro-paragraph {
+    display: flex;
     color: #fafafa;
     font-size: 20px;
 }
@@ -262,14 +286,14 @@ body {
     font-family: 'Teko', 'sans-serif';
     font-weight: 300;
     font-size: 40px;
-    text-align: center;
-    padding: 15px 5px;
+    text-align: left;
+    padding: 15px 0 0 0;
     text-transform: uppercase;
 }
 
 .section-paragraph {
     font-weight: 300;
-    padding: 10px 0;
+    padding: 0 0 15px 0;
     text-align: left;
     /*text-align: justify;*/
 }
@@ -953,22 +977,20 @@ button[type="submit"]:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .footer-about {
     width: 100%;
-    margin: 10px 10px 20px 10px;
 }
 
 .footer-links {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.footer-btcc-twitter-feed {
-    width: 100%;
-    margin: 10px 5px 20px 5px;
+.around-the-web {
+    margin: 0 0 20px 0;
 }
 
 .external-sites {
@@ -976,7 +998,7 @@ button[type="submit"]:hover {
     padding-left: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .external-sites a {
@@ -995,9 +1017,9 @@ button[type="submit"]:hover {
 }
 
 .social-links-area {
-    width: 100%;
-    margin: 10px 10px 25px 10px;
+    margin: 10px 0 25px 0;
     justify-content: center;
+    height: auto;
 }
 
 .footer-about-header {
@@ -1023,18 +1045,12 @@ button[type="submit"]:hover {
     font-weight: 200;
 }
 
-.social-links-area {
-    height: auto;
-    width: 100%;
-    margin: 10px 10px 10px 10px;
-}
-
 .social-links {
     margin: 5px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 0;
 }
 
@@ -1108,8 +1124,8 @@ button[type="submit"]:hover {
     }
     
     .footer-areas {
-        margin: 10px;
-        justify-content: center;
+        display: flex;
+        justify-content: space-between;
     }
     
     .footer-about {
@@ -1123,7 +1139,8 @@ button[type="submit"]:hover {
         width: 45%;
         height: auto;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     
     .footer-btcc-twitter-feed {
