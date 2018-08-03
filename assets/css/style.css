@@ -30,6 +30,19 @@ body {
     width: 100%;
 }
 
+.main-image-home-page {
+    height: 600px;
+}
+
+.championship-page-image {
+    background-image: url("../images/front-page-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}
+
 .btcc-page-image {
     background-image: url("../images/touring-car.jpg");
     background-size: cover;
@@ -186,7 +199,7 @@ body {
 
 /*Navbar drop down areas*/
 
-.toggle {
+.navbar-dropdown {
     color: #fff;
     width: 40px;
     margin-left: 30px;
@@ -202,7 +215,7 @@ body {
     display: none;
 }
 
-#toggle:checked + .navbar-display {
+#navbar-dropdown:checked + .navbar-display {
     display: inherit;
 }
 
@@ -223,7 +236,7 @@ body {
 }
 
 .site-intro-text {
-    width: 85%;
+    width: 90%;
 }
 
 .site-intro-header {
@@ -235,6 +248,9 @@ body {
     display: flex;
     color: #fafafa;
     font-size: 20px;
+    font-weight: 300;
+    padding: 0 0 15px 0;
+    text-align: center;
 }
 
 /*Championship Sections*/
@@ -245,7 +261,7 @@ body {
 }
 
 .section-layout {
-    width: 85%;
+    width: 90%;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -273,7 +289,7 @@ body {
     font-weight: 300;
     font-size: 50px;
     text-align: center;
-    padding: 15px 5px;
+    padding: 15px 0;
     text-transform: uppercase;
 }
 
@@ -286,17 +302,17 @@ body {
     text-transform: uppercase;
 }
 
+.video-section-header {
+    text-align: center;
+}
+
 .section-paragraph {
     font-weight: 300;
     padding: 0 0 15px 0;
     text-align: left;
-    /*text-align: justify;*/
 }
 
-.championships-section {
-    width: 100%;
-}
-
+.championship-section,
 .circuit-section,
 .event-section {
     width: 100%;
@@ -310,7 +326,7 @@ body {
 }
 
 .championship-description {
-    width: 85%;
+    width: 90%;
     color: #fff;
 }
 
@@ -479,6 +495,7 @@ body {
 .video-section,
 .link-button-section,
 .contact-section,
+.championship-section,
 .circuit-section,
 .event-section {
     width: 100%;
@@ -492,7 +509,13 @@ body {
 .video-row,
 .contact-row,
 .circuit-row {
-    width: 85%;
+    width: 90%;
+}
+
+.schedule-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .link-button {
@@ -750,7 +773,22 @@ video {
     justify-content: center;
 }
 
+/*Return to championship page section*/
+
+.link-button-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Contacts Page*/
+
+.contact-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
 .form-content {
     width: 100%;
@@ -760,7 +798,7 @@ video {
 }
 
 .form-text-box-area {
-    max-width: 100%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -768,33 +806,24 @@ video {
 
 .input-box {
     width: 100%;
-}
-
-.input-box-text {
-    font-size: 14px;
     height: 30px;
-    margin: 10px 0px 10px 0px;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: .5px;
-    width: 90%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-.checkbox-area {
-    width: 100%;
+.form-checkbox {
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    justify-content: flex-start;
 }
 
-.form-checkbox .checkbox-area{
+.checkbox-area{
     font-size: 16px;
     font-weight: 300;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: flex-start;
     width: 250px;
+    margin: 10px 0;
 }
 
 .champ-select-box {
@@ -812,13 +841,12 @@ video {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
 }
 
 .contact-submit-button-area {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 30px;
 }
 
@@ -846,32 +874,9 @@ video {
     border: none;
 }
 
-/*button[type="submit"] {
-    margin: 15px 0px 0px 0px;
-    max-width: 500px;
-    height: 50px;
-    background-color: #333;
-    border: 0;
-    color: #fff;
-    font-family: 'Teko', 'sans-serif';
-    font-size: 40px;
-    font-weight: 200;
-    transition-property: background-color, border-color;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-    cursor: pointer;
-}*/
+/*Championship, circuits and events page section images and content*/
 
-/*button[type="submit"]:hover {
-    transition-property: background-color, border-color;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-    background-color: #000;
-    border: none;
-}*/
-
-/*Circuits and events Page*/
-
+.championship,
 .circuits,
 .events {
     width: 100%;
@@ -880,6 +885,7 @@ video {
     justify-content: center;
 }
 
+.championship-overview,
 .circuit-overview,
 .events-overview {
     max-width: 350px;
@@ -889,19 +895,23 @@ video {
     margin: 3px 10px 3px 10px;
 }
 
+.championship-image-section,
 .circuit-image-section,
 .event-image-section {
     display: block;
     width: 100%;
 }
 
+.championship-info,
 .circuit-info,
 .event-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-weight: 200;
 }
 
+.championship-name,
 .event-name,
 .circuit-name {
     font-family: 'Teko', 'sans-serif';
@@ -910,19 +920,17 @@ video {
     margin: 0px 10px 0px 5px;
 }
 
+.championship-facts,
 .event-facts,
 .circuit-facts {
     font-size: 20px;
     margin: 0px 10px 20px 5px;
 }
 
-.circuit-length,
-.event-info {
-    font-weight: 200;
-}
-
+.championship-text,
 .circuit-text,
 .event-text {
+    height: 150px;
     padding-bottom: 5px;
     background-color: #ccc6c5;
 }
@@ -939,6 +947,7 @@ video {
     font-weight: 100;
 }
 
+.championship-visit-button,
 .circuit-visit-button,
 .event-visit-button {
     background-color: #333;
@@ -953,6 +962,7 @@ video {
     display: flex;
 }
 
+.championship-visit-button a,
 .circuit-visit-button a,
 .event-visit-button a {
     font-family: 'Teko', 'sans-serif';
@@ -965,6 +975,7 @@ video {
     text-align: center;
 }
 
+.championship-visit-button:hover,
 .circuit-visit-button:hover,
 .event-visit-button:hover {
     transition-property: background-color;
@@ -972,11 +983,6 @@ video {
     transition-timing-function: ease-in-out;
     background-color: #000;
     justify-content: center;
-}
-
-.cicuit-divider,
-.event-divider {
-    max-width: 350px;
 }
 
 /*Footer areas*/
@@ -991,7 +997,7 @@ video {
 
 .footer-areas {
     color: #fff;
-    width: 85%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1110,7 +1116,7 @@ video {
     
     /*Navbar section for larger screens*/
     
-    .toggle {
+    .navbar-dropdown {
         display: none;
     }
     
@@ -1135,13 +1141,18 @@ video {
         padding-bottom: 50px;
     }
     
-    .championship-image {
+    .site-intro-text {
+        width: 80%;
+    }
+    
+    /*.championship-image {
         margin: 10px;
         height: 200px;
         width: 40%;
-    }
+    }*/
     
     .footer-areas {
+        width: 85%;
         display: flex;
         justify-content: space-between;
     }
@@ -1174,7 +1185,19 @@ video {
     
     /*Championship pages*/
     
+    .link-button-section {
+        flex-direction: row;
+    }
+    
+    .link-button {
+        margin: 0 20px;
+    }
+    
     /*Contacts Page*/
+    
+    .contact-row {
+        width: 60%;
+    }
     
     .input-box {
         width: 500px;
@@ -1182,6 +1205,7 @@ video {
     
     /*Circuits pages*/
     
+    .championship-overview,
     .circuit-overview,
     .event-overview {
         width: 47%;
@@ -1207,6 +1231,10 @@ video {
 
 @media (min-width: 992px) {
     
+    .contact-row {
+        width: 45%;
+    }
+    
     .site-intro {
         display: flex;
         justify-content: center;
@@ -1214,7 +1242,11 @@ video {
         padding-bottom: 100px;
     }
     
-    .championship-image {
+    .site-intro-text {
+        width: 60%;
+    }
+    
+    /*.championship-image {
         margin: 10px;
         min-height: 250px;
         width: 28%;
@@ -1222,7 +1254,7 @@ video {
     
     .events-circuit-image {
         height: 350px;
-    }
+    }*/
     
     .teams-schedule-section {
         display: flex;
@@ -1246,5 +1278,9 @@ video {
     
     .video-player {
         -webkit-max-logical-height: 460px;
+    }
+    
+    .footer-areas {
+        width: 75%;
     }
 }
