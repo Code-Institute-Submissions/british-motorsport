@@ -17,24 +17,112 @@ body {
     margin-bottom: 30px;
 }
 
-/*Header Area*/
+/*Home page*/
 
-/*Front page images*/
+.site-intro-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.main-image {
+.site-intro-text-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 70vh;
+}
+
+.site-intro-paragraph-home {
+    color: #fafafa;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 0 15px 0;
+    text-align: center;
+}
+    
+.home-page-links {
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-page-links a {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 5px;
+}
+
+.home-page-links a:hover {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 5px;
+}
+
+.home-social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+}
+
+.social-links-home {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.social-links-home li a {
+    text-decoration: none;
+}
+
+.social-links-home li a i {
+    padding: 5px 5px;
+    margin: 0px 15px 0px 15px;
+    color: #fff;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-image-home-page {
     background-image: url("../images/front-page-image.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /*height: auto;*/
+    height: 100vh;
     width: 100%;
 }
 
-.main-image-home-page {
+.main-image-shade-home {
+    background-color: rgb(0, 0, 0, 0.6);
     height: 100vh;
 }
 
-/*.championship-page-image {
+/*Header Area*/
+
+/*Main images on each of the pages*/
+
+.championship-page-image {
     background-image: url("../images/front-page-image.jpg");
     background-size: cover;
     background-position: center;
@@ -113,14 +201,14 @@ body {
     background-repeat: no-repeat;
     height: auto;
     width: 100%;
-}*/
+}
 
 .main-image-shade {
     background-color: rgb(0, 0, 0, 0.6);
-    height: 100vh;
+    height: auto;
 }
 
-/*Navbar elements along the top of the site basic formatting*/
+/*Navbar elements along the top of the site basic formatting. Includes the about link and return to top in the footer.*/
 
 .navbar {
     display: flex;
@@ -235,16 +323,6 @@ body {
     padding-bottom: 20px;
 }
 
-.site-intro-home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .site-intro-text {
     width: 90%;
 }
@@ -255,7 +333,6 @@ body {
 }
 
 .site-intro-paragraph {
-    display: flex;
     color: #fafafa;
     font-size: 20px;
     font-weight: 300;
@@ -361,141 +438,6 @@ body {
     font-weight: 300;
     text-align: center;
     padding: 5px 0px 5px 0px;
-}
-
-.divider-line {
-    height: 1.5px;
-    background-color: #676767;
-    border: none;
-    margin-bottom: 15px;
-}
-
-/*Championships Image and effects*/
-
-#btcc-image {
-    background-image: url("../images/touring-car.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 auto;
-}
-
-#brc-image {
-    background-image: url("../images/rallycross.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 auto;
-}
-
-#bgt-image {
-    background-image: url("../images/british-gt.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 auto;
-}
-
-#bsbk-image {
-    background-image: url("../images/superbike.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 auto;
-}
-
-#brallyc-image {
-    background-image: url("../images/rally.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 auto;
-}
-
-#historics-image {
-    background-image: url("../images/1980s-benetton.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 auto;
-}
-
-#events-image {
-    background-image: url("../images/events.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 auto;
-}
-
-#circuits-image {
-    background-image: url("../images/racetrack.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    flex: 1 0 auto;
-}
-
-.overlay {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.championship-heading {
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    opacity: 0;
-}
-
-.championship-heading a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.championship-paragraph {
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    opacity: 0;
-}
-
-.championship-paragraph a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.championship-image:hover .overlay {
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    opacity: 0.7;
-} 
-
-.championship-image:hover .championship-heading {
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    opacity: 1;
-}
-
-.championship-image:hover .championship-paragraph {
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    opacity: 1;
-}
-
-.overview {
-    margin-bottom: 20px;
 }
 
 /*Individual championship schedules*/
@@ -684,7 +626,7 @@ body {
     transition-timing-function: ease-in-out;
 }
 
-/*British GT*/
+/*British Rally Championship*/
 
 .brallyc-team:hover {
     display: flex;
@@ -750,7 +692,7 @@ video {
     -webkit-max-logical-height: 210px;
 }
 
-/*Visit main page of the championship website*/
+/*Visit championship website link button*/
 
 .visit-champ-site {
     font-family: 'Teko', 'sans-serif';
@@ -783,7 +725,7 @@ video {
     justify-content: center;
 }
 
-/*Return to championship page section*/
+/*Return to championship page section button*/
 
 .link-button-section {
     display: flex;
@@ -1079,7 +1021,6 @@ video {
     font-weight: 200;
 }
 
-.social-links-home,
 .social-links {
     margin: 5px;
     list-style-type: none;
@@ -1089,12 +1030,10 @@ video {
     padding: 0;
 }
 
-.social-links-home li a,
 .social-links li a {
     text-decoration: none;
 }
 
-.social-links-home li a i,
 .social-links li a i {
     width: 25px;
     height: 25px;
@@ -1112,7 +1051,6 @@ video {
     align-items: center;
 }
 
-.social-links-home li a i:hover
 .social-links li a i:hover {
     transition-property: background-color;
     transition: 0.35s ease-in-out;
@@ -1127,6 +1065,12 @@ video {
 }
 
 @media (min-width: 768px) {
+    
+    /*Home page link area*/
+    
+    .home-page-links {
+        width: 500px;
+    }
     
     /*Navbar section for larger screens*/
     
@@ -1178,12 +1122,6 @@ video {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-    }
-    
-    .footer-btcc-twitter-feed {
-        margin: 10px;
-        width: 100%;
-        height: auto;
     }
     
     .social-links-area {
