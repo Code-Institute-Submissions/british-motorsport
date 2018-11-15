@@ -45,7 +45,7 @@ The links have been clicked following the user experiences mentioned to ensure t
 The HTML and CSS code was checked using online validators, and all pages were updated according to the results. 
 
 ## Deployment
-The project has been deployed to Github
+The project has been deployed to Github and is in the repository https://github.com/JShad30/british-motorsport. The live site can be viewed at https://jshad30.github.io/british-motorsport/
 
 ## Attribution
 ### Content
