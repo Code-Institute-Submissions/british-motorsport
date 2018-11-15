@@ -1,23 +1,20 @@
 # British Motorsport - Front End Milestone Project
 
-This is the Milestone project for the front end development part of the course. The site aims to provide the user with an overview of the motorsport championships and events to in the UK throughout the year.
+Please see my Milestone project for the front end development part of the Full Stack Development course. I have developed this site with the aim to provide the user with an overview of motorsport championships and events which take place in the UK throughout the year.
 
-A lot of these pages are similar but have differences. Some of the pages include photos adding to the visual effect of the site. Two of the championship pages also contain video. There are lots of outbound links to other websites, which aims to promote that championship.
+The sites pages include photos and videos to enhance to visual effect of the website. Within the content there are numerous outbound links to other websites, all of which help to promote on a larger scale, the many Championships in the UK.
 
 ## User Experience
+The pages (other than the home page) have the same header and footer creating a consistent feel to the site. The images have been kept the same size, the links have the same effects and the text style is the same throughout.
 
-The general pages follow the same theme follow the same structure, and contain different relevant information. All of these pages have a similar look and feel, including the hover effects.
-
-The home page has its own individual design to differentiate itself from the rest of the sub pages. At first (as can be seen in Wireframe/Front End 1) the front page was going to have the championship cards, as well as the circuits and events links at the bottom of the page. This subsequently changed following a discussion with my mentor, who suggested the front page have its own distinctive feel. 
-
-Other than the home page, all the following pages have the same header and footer creating a consistent feel to the site. All links, including those in the navbar and external links have been given a consistent apearance and hover effect.
+The home page has its own individual design to differentiate itself from the rest of the sub pages. At first (as can be seen in Wireframe/Front End 1) the front page was going to have the championship cards, as well as the circuits and events links at the bottom of the page. This subsequently changed following a discussion with my mentor, who suggested the front page have its own distinctive feel.
 
 ### Example use of site
 #### Home Page
 The user will type the URL into their browser and will be presented with the home page. From here they can select whether they want to explore the championships, events or circuits. On this home page they will also find links to the social media platforms that the site will be on. 
 
 #### Championships, Events and Circuits Pages
-These pages contain cards showing brief details of each championship, event or circuits with a link. On the championship page this link will take the user to a subsequent page with details of that championships calendar and driver/team lineup for 2018. At the bottom of the page there is a link out to the official site of that championship.
+These pages contain cards showing brief details of each championship, event or circuits with a link. On the championship page this link will take the user to a subsequent page with details of that championships calendar and driver/team lineups for 2018. At the bottom of the page there is a link out to the official site of that championship.
 
 Within the events and circuits page, clicking on this link takes the user straight to the official site. All external links open in a new tab to keep the user on my site.
 
@@ -34,7 +31,7 @@ The site currenty uses many external links to other motorsport pages, and also s
 Although the contact us form has been built, this is only for view currently and does not work in itself. This would need to be linked to an email server.
 
 ## Technology Used
-Following a discussion at the start of the project with my mentor, I decided not to use bootstrap or other framework for this project. It contained a lot of unecessary code that I would not need, and wanted to create my own designs which I also believed would enhance my learning.
+Following a discussion at the start of the project with my mentor, I decided not to use bootstrap or other framework for this project. It contained a lot of unecessary code that I would not need, and wanted to create my own designs which I feel also enhanced my learning.
 
 This site has been created using mobile first design. For the responsive elements of the site I have used Flexbox, and created media queries. These effects can be seen on all pages.
 
@@ -43,15 +40,18 @@ For mobile and tablet view sizes I have created a burger icon at the top for the
 ## Testing
 The site was tested on different screen sizes and browsers such as Chrome and Firefox, to ensure that the site layout responds well and looks good wherever the user is looking at the site. The only issue I have found currently is the shadow over the front of the main images on the home page, and subsequent header images is not displaying making it harder to read in these browsers.
 
-The links have been clicked following the user experiences mentioned.
+The links have been clicked following the user experiences mentioned to ensure they are linking to the correct pages.
 
 The HTML and CSS code was checked using online validators, and all pages were updated according to the results. 
 
 ## Deployment
+The project has been deployed to Github
 
 ## Attribution
 ### Content
-The images were obtained from a number of sources, including websites and personal portfolio. The yearly calendars and teams/driver lineups were obtained from the main sites of the championships. Videos were my own.
+The images were obtained from a number of sources, including websites and personal portfolio. The yearly calendars and teams/driver lineups were obtained from the main sites of the championships. The videos were taken from events I have previously attended.
+
+The lap records in the circuits page came from the wikipedia links for that particular circuit. 
 
 #### Main Page Images
 Main Site Image/ Championship Header Image - Personal
